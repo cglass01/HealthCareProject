@@ -80,7 +80,7 @@ public class StaffDiagonsisWindowController implements Initializable {
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			sqlState2 = conn.createStatement();
 			sqlState3 = conn.createStatement();
@@ -137,7 +137,7 @@ public class StaffDiagonsisWindowController implements Initializable {
 			
 			try{
 				Class.forName("com.mysql.jdbc.Driver");
-				conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+				conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 				Statement noteStatement = conn.createStatement();
 				String noteCommand = "Select height, weight, heart_rate, blood_pressure, medication from doctor_notes where appointment_date = '"+ split[0] + "' and appointment_time = '" + split[1] + "' and patient_id = '" + split[2] + "'";
 				ResultSet noteResult = noteStatement.executeQuery(noteCommand);
