@@ -104,7 +104,7 @@ public class PatientInteractionWindowController implements Initializable{
 				try{
 					Class.forName("com.mysql.jdbc.Driver");
 
-					conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+					conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 					sqlState = conn.createStatement();
 				//	System.out.println("Command 1");
 					String command = "Select first_name, last_name from employee where first_name = '" + result.get() +"' OR last_name = '" + result.get() +"'";
@@ -207,7 +207,7 @@ public class PatientInteractionWindowController implements Initializable{
 				date = appointmentDate.getValue().toString();
 				try{
 					Class.forName("com.mysql.jdbc.Driver");
-					conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+					conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 
 					sqlState4 = conn.createStatement();
 					
