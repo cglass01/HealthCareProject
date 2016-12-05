@@ -38,7 +38,7 @@ public class DatabaseWork {
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Select patient_id from patient where patient_id = '" + id + "'";
@@ -69,7 +69,7 @@ public class DatabaseWork {
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Select staff_id from employee where staff_id = '" + id +"'";
@@ -100,7 +100,7 @@ public class DatabaseWork {
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Select * from patient where patient_id = '" + id +"'";
@@ -135,7 +135,7 @@ public class DatabaseWork {
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Select * from employee where staff_id = '" + id +"'";
@@ -169,7 +169,7 @@ public class DatabaseWork {
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			prepareState = conn.prepareStatement("insert into patient (first_name , last_name , ssn, address, city, zip_code, county, phone, date_of_birth, gender, immunization_status, emergency_contact, emergency_contact_relationship, emergency_contact_number, insurance, patient_id) " + "values(?, ? , ?, ? , ?, ?, ? , ?, ? , ?, ?, ? , ?, ?, ?, ?)");
@@ -211,7 +211,7 @@ public class DatabaseWork {
 			Class.forName("com.mysql.jdbc.Driver");
 			
 	//		System.out.println("Getting id");
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Select * from patient where ssn = '" + ssn +"'";
@@ -242,7 +242,7 @@ public static Boolean SaveStaff(Employee pat){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			prepareState = conn.prepareStatement("insert into employee (first_name , last_name , ssn, address, city, zip_code, county, phone, date_of_birth, gender, staff_position, staff_speciality, staff_salary, staff_id) " + "values(?, ? , ?, ? , ?, ?, ? , ?, ? , ?, ?, ? , ?, ?)");
@@ -285,7 +285,7 @@ public static Boolean SaveStaff(Employee pat){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Delete from employee where staff_id = '" + id +"'";
@@ -312,7 +312,7 @@ public static Boolean SaveStaff(Employee pat){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Select * from employee where ssn = '" + ssn +"'";
@@ -344,7 +344,7 @@ public static Boolean SaveStaff(Employee pat){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			
@@ -395,7 +395,7 @@ public static Boolean SaveStaff(Employee pat){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Select appointment_date, appointment_time, staff_id from appointment where appointment_date = '" + appointmentDate + "' && appointment_time = '" + appointmentTime + "' && staff_id = '" + id  + "'";
@@ -430,7 +430,7 @@ public static Boolean SaveStaff(Employee pat){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "update appointment set staff_id = '" + id + "' where patient_id = '" + id2 +"' AND appointment_date = '" + date +"' AND appointment_time = '" + time +"'";
@@ -461,7 +461,7 @@ public static Boolean SaveStaff(Employee pat){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Select appointment_date, appointment_time, staff_id from appointment where appointment_date = '" + appointment + "' && appointment_time = '" + string + "' && staff_id = '" + staffID  + "'";
@@ -496,7 +496,7 @@ public static Boolean SaveStaff(Employee pat){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			command = "select staff_id from employee where first_name = '" + doctor + "' OR last_name = '" + doctor + "'";
@@ -542,7 +542,7 @@ public static Boolean SaveStaff(Employee pat){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Select appointment_date, appointment_time, patient_id from appointment where appointment_date = '" + appointmentDate + "' && appointment_time = '" + appointmentTime + "' && patient_id = '" + patID  + "'";
@@ -576,7 +576,7 @@ public static Boolean SaveStaff(Employee pat){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			sqlState2 = conn.createStatement();
 			String command = "Select appointment_date, appointment_time, patient_id from appointment where staff_id = '" + idNumber + "'";
@@ -627,7 +627,7 @@ public static Boolean SaveStaff(Employee pat){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Select staff_position from employee where staff_id = '" + id +"'";
@@ -658,7 +658,7 @@ public static Boolean SaveStaff(Employee pat){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Select diagnosis from payment_bill where patient_id = '" + id + "' AND paid = 'N'";
