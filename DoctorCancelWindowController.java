@@ -43,7 +43,7 @@ public class DoctorCancelWindowController implements Initializable{
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 			
 			String command = "Select appointment_date, appointment_time, patient_id from appointment where nurse_visit = 'Y' And doctor_visit is NULL";
