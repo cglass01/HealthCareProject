@@ -110,7 +110,7 @@ public class PatientPaymentWindowController implements Initializable{
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 
-			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+			conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 			sqlState = conn.createStatement();
 	//		System.out.println(patID);
 			String command = "Select diagnosis, appointment_date, appointment_time, payment from payment_bill where patient_id = '" + patID + "' AND paid = 'N'"; 
@@ -207,7 +207,7 @@ public class PatientPaymentWindowController implements Initializable{
 						try{
 							Class.forName("com.mysql.jdbc.Driver");
 
-							conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+							conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 							sqlState = conn.createStatement();
 							
 							command = "update payment_bill set paid = 'Y' where appointment_date = '" +appDate.get(convertor) +"' AND appointment_time = '" +appTime.get(convertor)+ "' AND diagnosis = '" +appDia.get(convertor)+"' AND patient_id = '" +patID+"'";
@@ -248,7 +248,7 @@ public class PatientPaymentWindowController implements Initializable{
 						try{
 							Class.forName("com.mysql.jdbc.Driver");
 
-							conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "Agemodel3!" );
+							conn= DriverManager.getConnection("jdbc:mysql://localhost/healthcare_clinic?autoReconnect=true&useSSL=false","root", "CSC3610" );
 							sqlState = conn.createStatement();
 							
 							//This updates the bill table to 'Y' for the paid attribute.
