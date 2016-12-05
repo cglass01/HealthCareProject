@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthcareLook.MainMenuController">
+   <children>
+      <Pane prefHeight="300.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="68.0" layoutY="25.0" prefHeight="65.0" prefWidth="269.0" text="Welcome to Aurora Healthcare Clinic" wrapText="true">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="82.0" prefHeight="48.0" prefWidth="269.0" text="Are you a Receptionist or Other Staff?">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonPatient" layoutX="50.0" layoutY="188.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="93.0" text="Receptionist" />
+            <Button fx:id="buttonStaff" layoutX="171.0" layoutY="188.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="80.0" text="Staff" />
+            <Button fx:id="buttonQuit" layoutX="286.0" layoutY="188.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" text="Quit" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
